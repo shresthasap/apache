@@ -8,8 +8,8 @@ package 'httpd'
 
 file '/var/www/index.html' do
   content '<h1>Hello, world!</h1>
-  IPADDRESS: #{node['ipaddress']}
-  HOSTNAME: #{node['hostname']}
+  <h2>IPADDRESS: #{node['ipaddress']}</h2>
+  <h2>HOSTNAME: #{node['hostname']}</h2>
 "
 end
 
